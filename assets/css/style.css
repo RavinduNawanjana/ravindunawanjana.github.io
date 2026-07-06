@@ -1,0 +1,305 @@
+/* ===========================================================
+   Ravindu Nawanjana - academic site
+   Sticky masthead, environment-tinted background, deep blue
+   type, leaf accents nodding to the climate/finance research
+   theme, and a connecting timeline through the Research section.
+   =========================================================== */
+
+:root {
+  --bg: #f3f6f1;
+  --card-bg: #ffffff;
+  --ink: #17201a;
+  --muted: #56605a;
+  --link: #0b3d8f;
+  --link-dark: #082a63;
+  --leaf: #2f6d4f;
+  --rule: #d9ddd5;
+  --max-width: 900px;
+}
+
+* { box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--ink);
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+h1, h2, h3 { line-height: 1.25; margin: 0 0 0.5em; color: var(--ink); }
+h1 { font-size: 1.9rem; }
+h2 {
+  font-size: 1.4rem;
+  margin-top: 2.4rem;
+  padding-bottom: 0.35rem;
+  border-bottom: 2px solid var(--leaf);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  scroll-margin-top: 110px;
+}
+h2 i { color: var(--leaf); font-size: 1.1rem; }
+h2::before {
+  content: "\f06c";
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  color: var(--leaf);
+  font-size: 0.85em;
+}
+h3 { font-size: 1.05rem; margin-top: 1.6rem; }
+
+p { margin: 0 0 1em; }
+
+a { color: var(--link); text-decoration: underline; }
+a:hover { color: var(--link-dark); }
+
+/* ---------- Header: sticky, always visible ---------- */
+
+.site-header {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: var(--bg);
+  border-bottom: 1px solid var(--rule);
+  box-shadow: 0 1px 0 rgba(0,0,0,0.02);
+}
+
+.site-header > * {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.site-title-row {
+  display: flex;
+  align-items: baseline;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  padding-top: 1.1rem;
+}
+
+.site-title {
+  font-size: 1.7rem;
+  font-weight: 800;
+  color: var(--link-dark);
+  text-decoration: none;
+}
+.site-title:hover { text-decoration: underline; }
+
+.site-tagline {
+  font-size: 1.3rem;
+  font-weight: 800;
+  color: var(--link-dark);
+}
+
+.site-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.3rem;
+  font-size: 0.98rem;
+  padding-top: 0.5rem;
+  padding-bottom: 0.9rem;
+}
+.site-nav a {
+  color: var(--link);
+  text-decoration: underline;
+  font-weight: 600;
+}
+.site-nav a:hover { color: var(--link-dark); }
+
+/* ---------- Page layout ---------- */
+
+main {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 1rem 1.5rem 3rem;
+}
+
+/* ---------- Home / bio ---------- */
+
+.profile-block {
+  display: flex;
+  gap: 2.2rem;
+  align-items: flex-start;
+  margin-top: 1.4rem;
+  margin-bottom: 0.5rem;
+  flex-wrap: wrap-reverse;
+}
+
+.profile-photo {
+  width: 340px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 10px;
+  border: 1px solid var(--rule);
+  flex-shrink: 0;
+  margin-left: auto;
+  box-shadow: 0 4px 18px rgba(23, 32, 26, 0.08);
+}
+
+.profile-text { flex: 1 1 360px; min-width: 260px; }
+
+.edu-line {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5em;
+  font-size: 0.94rem;
+  color: var(--muted);
+  background: var(--card-bg);
+  border: 1px solid var(--rule);
+  border-left: 3px solid var(--leaf);
+  border-radius: 6px;
+  padding: 0.55rem 0.9rem;
+  margin: 0.4rem 0 1.2rem;
+}
+.edu-line i { color: var(--leaf); }
+.edu-line strong { color: var(--ink); }
+
+.contact-list {
+  list-style: none;
+  margin: 1rem 0 0.5rem;
+  padding: 0.9rem 0 0.9rem 0;
+  border-top: 1px solid var(--rule);
+  border-bottom: 1px solid var(--rule);
+  display: flex;
+  flex-direction: column;
+  gap: 0.55rem;
+  font-size: 0.96rem;
+}
+.contact-list li { display: flex; align-items: center; gap: 0.5em; }
+.contact-list li::before {
+  content: "\f06c"; /* fa-leaf */
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  color: var(--leaf);
+  font-size: 0.85em;
+}
+.contact-list a { text-decoration: none; }
+.contact-list a:hover { text-decoration: underline; }
+.contact-list i.fa-brands, .contact-list i.ai { margin-right: 0.3em; color: var(--link); }
+
+/* ---------- Research: connecting timeline ---------- */
+
+.research-timeline {
+  position: relative;
+  padding-left: 1.7rem;
+}
+.research-timeline::before {
+  content: "";
+  position: absolute;
+  left: 0.4rem;
+  top: 0.5rem;
+  bottom: 0.5rem;
+  width: 2px;
+  background: linear-gradient(to bottom, var(--leaf), var(--link));
+}
+
+.paper-block {
+  position: relative;
+  margin-bottom: 2.4rem;
+}
+.paper-block::before {
+  content: "";
+  position: absolute;
+  left: -1.7rem;
+  top: 0.4rem;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: var(--leaf);
+  border: 2px solid var(--bg);
+  box-shadow: 0 0 0 2px var(--leaf);
+}
+.paper-block:last-child::before { background: var(--link); box-shadow: 0 0 0 2px var(--link); }
+
+.paper-block .status { color: var(--muted); font-size: 0.9rem; }
+.paper-block h3 em { font-style: italic; }
+
+table.data-table {
+  border-collapse: collapse;
+  width: 100%;
+  margin: 0.8rem 0 1.4rem;
+  font-size: 0.88rem;
+  background: var(--card-bg);
+}
+table.data-table caption {
+  text-align: left;
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin-bottom: 0.4rem;
+  caption-side: top;
+}
+table.data-table th, table.data-table td {
+  border: 1px solid var(--rule);
+  padding: 0.4rem 0.6rem;
+  text-align: left;
+  vertical-align: top;
+}
+table.data-table th { background: #eaf1e8; }
+
+.cite-link { font-size: 0.9rem; }
+
+/* ---------- Media ---------- */
+
+blockquote {
+  margin: 1.2rem 0;
+  padding: 0.1rem 0 0.1rem 1.1rem;
+  border-left: 3px solid var(--leaf);
+  font-style: italic;
+  color: var(--muted);
+}
+
+.video-embed {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  margin: 1rem 0;
+  border: 1px solid var(--rule);
+}
+.video-embed iframe {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  border: none;
+}
+
+.iisd-photo {
+  max-width: 100%;
+  border: 1px solid var(--rule);
+  border-radius: 8px;
+  margin-top: 0.8rem;
+}
+
+.photo-credit {
+  font-size: 0.85rem;
+  color: var(--muted);
+  margin-top: 0.4rem;
+}
+
+/* ---------- Footer ---------- */
+
+.site-footer {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 1.5rem 1.5rem 3rem;
+  border-top: 1px solid var(--rule);
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+.site-footer p { margin: 0.3em 0; }
+
+/* ---------- Responsive ---------- */
+
+@media (max-width: 720px) {
+  h1 { font-size: 1.5rem; }
+  .site-title { font-size: 1.3rem; }
+  .site-tagline { font-size: 1.05rem; }
+  .profile-photo { width: 100%; height: auto; aspect-ratio: 4 / 5; max-width: 320px; margin-left: 0; }
+  table.data-table { font-size: 0.8rem; }
+}
+
+a:focus-visible { outline: 2px solid var(--link); outline-offset: 2px; }

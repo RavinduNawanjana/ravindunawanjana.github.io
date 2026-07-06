@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ site.title }} - Environmental Economist</title>
+  <meta name="description" content="{{ page.description | default: site.description }}">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="{{ site.url }}{{ page.url | replace: 'index.html', '' }}">
+  <meta name="theme-color" content="#eef3ec">
+
+  <!-- Open Graph / social preview -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="{{ site.title }} - Environmental Economist">
+  <meta property="og:description" content="{{ page.description | default: site.description }}">
+  <meta property="og:url" content="{{ site.url }}{{ page.url | replace: 'index.html', '' }}">
+  <meta property="og:image" content="{{ '/assets/img/headshot.jpg' | absolute_url }}">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{ site.title }} - Environmental Economist">
+  <meta name="twitter:description" content="{{ page.description | default: site.description }}">
+  <meta name="twitter:image" content="{{ '/assets/img/headshot.jpg' | absolute_url }}">
+
+  <!-- Favicon: .ico at the true site root is the most compatible fallback,
+       plus explicit PNG sizes for modern browsers. If it still doesn't show,
+       it's almost always browser favicon caching - try a hard refresh or an
+       incognito window. -->
+  <link rel="icon" href="{{ '/favicon.ico' | relative_url }}" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="{{ '/assets/img/favicon-32.png' | relative_url }}">
+  <link rel="apple-touch-icon" sizes="180x180" href="{{ '/assets/img/favicon-180.png' | relative_url }}">
+
+  <!-- Icon fonts, used for the small GitHub / LinkedIn / Scholar / leaf marks -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.4/css/academicons.min.css">
+
+  <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Ravindu Nawanjana",
+    "jobTitle": "Environmental Economist",
+    "url": "{{ site.url }}{{ '/' | relative_url }}",
+    "image": "{{ '/assets/img/headshot.jpg' | absolute_url }}",
+    "email": "mailto:gmn0021@my.londonmet.ac.uk",
+    "affiliation": {
+      "@type": "CollegeOrUniversity",
+      "name": "London Metropolitan University"
+    },
+    "sameAs": [
+      "https://www.linkedin.com/in/ravindunawanjana/",
+      "https://github.com/RavinduNawanjana",
+      "https://scholar.google.com/citations?user=djgLs4EAAAAJ&hl=en"
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="site-title-row">
+      <a href="{{ '/' | relative_url }}" class="site-title">Ravindu Nawanjana</a>
+      <span class="site-tagline">- Environmental Economist</span>
+    </div>
+    <nav class="site-nav">
+      <a href="{{ '/' | relative_url }}">Home</a>
+      <a href="{{ '/' | relative_url }}#research">Research</a>
+      <a href="{{ '/' | relative_url }}#media">Media</a>
+      <a href="{{ '/assets/cv/Ravindu_Nawanjana_CV.pdf' | relative_url }}" target="_blank" rel="noopener">CV</a>
+      <a href="https://github.com/RavinduNawanjana" target="_blank" rel="noopener">GitHub</a>
+    </nav>
+  </header>
+
+  <main>
+    {{ content }}
+  </main>
+
+  <footer class="site-footer">
+    <p>gmn0021@my.londonmet.ac.uk</p>
+    <p>All views and opinions reflected on this site are my own and do not reflect the view of my employer or academic institutions.</p>
+  </footer>
+
+</body>
+</html>
