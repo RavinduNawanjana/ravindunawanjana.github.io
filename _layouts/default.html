@@ -5,13 +5,14 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <!-- Set light/dark theme before first paint, so the page never flashes
-       the wrong mode. Reads the visitor's saved choice, falls back to
-       their OS preference. Must stay inline + synchronous. -->
+       the wrong mode. Always starts in light mode; only switches to dark
+       if the visitor previously chose it via the toggle button. Must
+       stay inline + synchronous. -->
   <script>
     (function () {
-      var saved = localStorage.getItem('theme');
-      var wantsDark = saved ? saved === 'dark' : window.matchMedia('(prefers-color-scheme: dark)').matches;
-      if (wantsDark) document.documentElement.setAttribute('data-theme', 'dark');
+      if (localStorage.getItem('theme') === 'dark') {
+        document.documentElement.setAttribute('data-theme', 'dark');
+      }
     })();
   </script>
 
