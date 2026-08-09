@@ -50,18 +50,7 @@ h2 {
   margin-top: 2.4rem;
   padding-bottom: 0.35rem;
   border-bottom: 2px solid var(--leaf);
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
   scroll-margin-top: 110px;
-}
-h2 i { color: var(--leaf); font-size: 1.1rem; }
-h2::before {
-  content: "\f06c";
-  font-family: "Font Awesome 6 Free";
-  font-weight: 900;
-  color: var(--leaf);
-  font-size: 0.85em;
 }
 h3 { font-size: 1.05rem; margin-top: 1.6rem; }
 
@@ -192,21 +181,13 @@ main {
 
 .contact-list {
   clear: both;
-  list-style: none;
+  list-style: disc;
   margin: 1rem 0 0.5rem;
-  padding: 0.4rem 0 0.4rem 0;
+  padding: 0.4rem 0 0.4rem 1.3rem;
   display: flex;
   flex-direction: column;
   gap: 0.55rem;
   font-size: 0.96rem;
-}
-.contact-list li { display: flex; align-items: center; gap: 0.5em; }
-.contact-list li::before {
-  content: "\f06c"; /* fa-leaf */
-  font-family: "Font Awesome 6 Free";
-  font-weight: 900;
-  color: var(--leaf);
-  font-size: 0.85em;
 }
 .contact-list a { text-decoration: none; }
 .contact-list a:hover { text-decoration: underline; }
