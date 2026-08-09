@@ -4,6 +4,8 @@ title: Home
 permalink: /
 ---
 
+# Ravindu Nawanjana
+
 <div class="profile-block">
   <div class="profile-text">
     <p>
