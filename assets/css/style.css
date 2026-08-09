@@ -3,9 +3,11 @@
    Sticky masthead, environment-tinted background, deep blue
    type, leaf accents nodding to the climate/finance research
    theme, and a connecting timeline through the Research section.
+   Supports a light/dark toggle via [data-theme="dark"] on <html>.
    =========================================================== */
 
 :root {
+  color-scheme: light;
   --bg: #f3f6f1;
   --card-bg: #ffffff;
   --ink: #17201a;
@@ -17,6 +19,18 @@
   --max-width: 900px;
 }
 
+[data-theme="dark"] {
+  color-scheme: dark;
+  --bg: #12160f;
+  --card-bg: #1a2018;
+  --ink: #e7ebe2;
+  --muted: #a7b0a1;
+  --link: #6fa2e6;
+  --link-dark: #9cc0f2;
+  --leaf: #5fb383;
+  --rule: #2c332a;
+}
+
 * { box-sizing: border-box; }
 
 body {
@@ -26,6 +40,7 @@ body {
   font-family: Georgia, "Times New Roman", Times, serif;
   font-size: 16px;
   line-height: 1.6;
+  transition: background-color 0.25s ease, color 0.25s ease;
 }
 
 h1, h2, h3 { line-height: 1.25; margin: 0 0 0.5em; color: var(--ink); }
@@ -64,6 +79,7 @@ a:hover { color: var(--link-dark); }
   background: var(--bg);
   border-bottom: 1px solid var(--rule);
   box-shadow: 0 1px 0 rgba(0,0,0,0.02);
+  transition: background-color 0.25s ease, border-color 0.25s ease;
 }
 
 .site-header > * {
@@ -94,6 +110,29 @@ a:hover { color: var(--link-dark); }
   font-weight: 800;
   color: var(--link-dark);
 }
+
+/* Dark-mode toggle - sits at the top right of the masthead */
+.theme-toggle {
+  margin-left: auto;
+  align-self: center;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.3rem;
+  height: 2.3rem;
+  flex-shrink: 0;
+  border-radius: 50%;
+  border: 1px solid var(--rule);
+  background: var(--card-bg);
+  color: var(--leaf);
+  font-size: 1rem;
+  cursor: pointer;
+  padding: 0;
+  transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease, transform 0.15s ease;
+}
+.theme-toggle:hover { border-color: var(--leaf); transform: translateY(-1px); }
+.theme-toggle:active { transform: translateY(0); }
+.theme-toggle i { pointer-events: none; }
 
 .site-nav {
   display: flex;
@@ -239,6 +278,7 @@ table.data-table th, table.data-table td {
   vertical-align: top;
 }
 table.data-table th { background: #eaf1e8; }
+[data-theme="dark"] table.data-table th { background: #212a1e; }
 
 .cite-link { font-size: 0.9rem; }
 
@@ -303,3 +343,12 @@ blockquote {
 }
 
 a:focus-visible { outline: 2px solid var(--link); outline-offset: 2px; }
+.theme-toggle:focus-visible { outline: 2px solid var(--link); outline-offset: 2px; }
+
+/* ---------- Motion & accessibility ---------- */
+
+@media (prefers-reduced-motion: reduce) {
+  body, .site-header, .theme-toggle {
+    transition: none !important;
+  }
+}
