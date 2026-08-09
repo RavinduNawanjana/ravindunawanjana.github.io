@@ -97,18 +97,25 @@ a:hover { color: var(--link-dark); }
   padding-top: 1.1rem;
 }
 
-.site-title {
-  font-size: 1.7rem;
-  font-weight: 800;
+.site-heading { margin: 0; }
+.site-heading a {
+  display: inline-flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: 0.5rem;
   color: var(--link-dark);
   text-decoration: none;
 }
-.site-title:hover { text-decoration: underline; }
+.site-heading a:hover { text-decoration: underline; }
+
+.site-name {
+  font-size: 1.7rem;
+  font-weight: 800;
+}
 
 .site-tagline {
   font-size: 1.3rem;
   font-weight: 800;
-  color: var(--link-dark);
 }
 
 /* Dark-mode toggle - sits at the top right of the masthead */
@@ -159,32 +166,27 @@ main {
 
 /* ---------- Home / bio ---------- */
 
-.profile-block {
-  display: flex;
-  gap: 2.2rem;
-  align-items: flex-start;
-  margin-top: 1.4rem;
-  margin-bottom: 0.5rem;
-  flex-wrap: wrap-reverse;
+.profile-photo-wrap {
+  float: right;
+  margin: 0.2rem 0 1.2rem 2.2rem;
 }
 
 .profile-photo {
+  display: block;
   width: 340px;
   height: 400px;
   object-fit: cover;
   border-radius: 10px;
   border: 1px solid var(--rule);
-  flex-shrink: 0;
-  margin-left: auto;
   box-shadow: 0 4px 18px rgba(23, 32, 26, 0.08);
 }
 
-.profile-text { flex: 1 1 360px; min-width: 260px; }
-
 .edu-line {
-  display: inline-flex;
-  align-items: center;
-  gap: 0.5em;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  column-gap: 0.6em;
+  row-gap: 0.35em;
   font-size: 0.94rem;
   color: var(--muted);
   background: var(--card-bg);
@@ -194,10 +196,13 @@ main {
   padding: 0.55rem 0.9rem;
   margin: 0.4rem 0 1.2rem;
 }
-.edu-line i { color: var(--leaf); }
+.edu-line i { color: var(--leaf); flex: 0 0 auto; }
 .edu-line strong { color: var(--ink); }
+.edu-item { flex: 0 0 auto; }
+.edu-arrow { color: var(--leaf); font-weight: 700; flex: 0 0 auto; }
 
 .contact-list {
+  clear: both;
   list-style: none;
   margin: 1rem 0 0.5rem;
   padding: 0.9rem 0 0.9rem 0;
@@ -336,9 +341,10 @@ blockquote {
 
 @media (max-width: 720px) {
   h1 { font-size: 1.5rem; }
-  .site-title { font-size: 1.3rem; }
+  .site-name { font-size: 1.3rem; }
   .site-tagline { font-size: 1.05rem; }
-  .profile-photo { width: 100%; height: auto; aspect-ratio: 4 / 5; max-width: 320px; margin-left: 0; }
+  .profile-photo-wrap { float: none; margin: 0 0 1.2rem; }
+  .profile-photo { width: 100%; height: auto; aspect-ratio: 4 / 5; max-width: 320px; }
   table.data-table { font-size: 0.8rem; }
 }
 
