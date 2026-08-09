@@ -1,4 +1,2 @@
-ffffeeev
-ddd
-ddew
+ffffeee
 eewedw
