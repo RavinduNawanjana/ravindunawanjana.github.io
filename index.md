@@ -4,29 +4,29 @@ title: Home
 permalink: /
 ---
 
-# Ravindu Nawanjana
-
-<div class="profile-block">
-  <div class="profile-text">
-    <p>
-      I am an MSc student in International Banking and Finance at the Guildhall School of
-      Business and Law, London Metropolitan University. My research examines how financial
-      institutions and market infrastructure, including stock exchanges, multilateral
-      development banks, central banks, and private capital, can be structured and incentivised
-      to close the global climate finance gap, with a focus on emerging markets, the G77, and
-      Small Island Developing States. I combine large scale practitioner surveys, senior
-      stakeholder interviews (including at the World Bank), and comparative case analysis of
-      stock exchanges and green finance instruments worldwide to translate findings into
-      actionable policy for regulators and multilateral institutions.
-    </p>
-    <p class="edu-line">
-      <i class="fa-solid fa-graduation-cap"></i>
-      <strong>BSc (Hons) Banking and Finance</strong> (Aug 2023) &rarr;
-      <strong>MSc International Banking and Finance</strong> (Sep 2026)
-    </p>
-  </div>
+<div class="profile-photo-wrap">
   <img src="{{ '/assets/img/headshot.jpg' | relative_url }}" alt="Ravindu Nawanjana" class="profile-photo">
 </div>
+
+# Ravindu Nawanjana
+
+<p>
+  I am an MSc student in International Banking and Finance at the Guildhall School of
+  Business and Law, London Metropolitan University. My research examines how financial
+  institutions and market infrastructure, including stock exchanges, multilateral
+  development banks, central banks, and private capital, can be structured and incentivised
+  to close the global climate finance gap, with a focus on emerging markets, the G77, and
+  Small Island Developing States. I combine large scale practitioner surveys, senior
+  stakeholder interviews (including at the World Bank), and comparative case analysis of
+  stock exchanges and green finance instruments worldwide to translate findings into
+  actionable policy for regulators and multilateral institutions.
+</p>
+<p class="edu-line">
+  <i class="fa-solid fa-graduation-cap"></i>
+  <span class="edu-item"><strong>BSc (Hons) Banking and Finance</strong> (Aug 2023)</span>
+  <span class="edu-arrow" aria-hidden="true">&rarr;</span>
+  <span class="edu-item"><strong>MSc International Banking and Finance</strong> (Sep 2026)</span>
+</p>
 
 <ul class="contact-list">
   <li><a href="{{ '/assets/cv/Ravindu_Nawanjana_CV.pdf' | relative_url }}" target="_blank" rel="noopener">View and Download CV</a></li>
