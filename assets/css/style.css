@@ -99,24 +99,13 @@ a:hover { color: var(--link-dark); }
 
 .site-heading { margin: 0; }
 .site-heading a {
-  display: inline-flex;
-  flex-wrap: wrap;
-  align-items: baseline;
-  gap: 0.5rem;
+  font-size: 2rem;
+  font-weight: 800;
   color: var(--link-dark);
-  text-decoration: none;
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
-.site-heading a:hover { text-decoration: underline; }
-
-.site-name {
-  font-size: 2.1rem;
-  font-weight: 800;
-}
-
-.site-tagline {
-  font-size: 1.7rem;
-  font-weight: 800;
-}
+.site-heading a:hover { color: var(--link); }
 
 /* Dark-mode toggle - sits at the top right of the masthead */
 .theme-toggle {
@@ -339,8 +328,7 @@ blockquote {
 
 @media (max-width: 720px) {
   h1 { font-size: 1.5rem; }
-  .site-name { font-size: 1.5rem; }
-  .site-tagline { font-size: 1.2rem; }
+  .site-heading a { font-size: 1.35rem; }
   .profile-photo-wrap { float: none; margin: 0 0 1.2rem; }
   .profile-photo { width: 100%; height: auto; aspect-ratio: 4 / 5; max-width: 320px; }
   table.data-table { font-size: 0.8rem; }
