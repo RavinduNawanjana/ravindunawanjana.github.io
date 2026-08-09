@@ -1,7 +1,7 @@
 /* Dark / light mode toggle.
    Pairs with the inline anti-flash script in <head> (see _layouts/default.html),
-   which sets data-theme="dark" on <html> before first paint if that was the
-   visitor's last choice, or their OS preference if they haven't chosen yet. */
+   which sets data-theme="dark" on <html> before first paint only if that was
+   the visitor's last explicit choice. Otherwise the site always starts light. */
 (function () {
   function currentTheme() {
     return document.documentElement.getAttribute('data-theme') === 'dark' ? 'dark' : 'light';
@@ -39,20 +39,5 @@
       syncButton(button, theme);
       applyThemeColor(theme);
     });
-
-    // If the visitor hasn't made an explicit choice yet, keep following the OS.
-    if (!localStorage.getItem('theme') && window.matchMedia) {
-      window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', function (e) {
-        if (localStorage.getItem('theme')) return; // they've since chosen manually
-        theme = e.matches ? 'dark' : 'light';
-        if (theme === 'dark') {
-          document.documentElement.setAttribute('data-theme', 'dark');
-        } else {
-          document.documentElement.removeAttribute('data-theme');
-        }
-        syncButton(button, theme);
-        applyThemeColor(theme);
-      });
-    }
   });
 })();
