@@ -8,7 +8,7 @@
 
 :root {
   color-scheme: light;
-  --bg: #f3f6f1;
+  --bg: #ffffff;
   --card-bg: #ffffff;
   --ink: #17201a;
   --muted: #56605a;
@@ -109,12 +109,12 @@ a:hover { color: var(--link-dark); }
 .site-heading a:hover { text-decoration: underline; }
 
 .site-name {
-  font-size: 1.7rem;
+  font-size: 2.1rem;
   font-weight: 800;
 }
 
 .site-tagline {
-  font-size: 1.3rem;
+  font-size: 1.7rem;
   font-weight: 800;
 }
 
@@ -339,8 +339,8 @@ blockquote {
 
 @media (max-width: 720px) {
   h1 { font-size: 1.5rem; }
-  .site-name { font-size: 1.3rem; }
-  .site-tagline { font-size: 1.05rem; }
+  .site-name { font-size: 1.5rem; }
+  .site-tagline { font-size: 1.2rem; }
   .profile-photo-wrap { float: none; margin: 0 0 1.2rem; }
   .profile-photo { width: 100%; height: auto; aspect-ratio: 4 / 5; max-width: 320px; }
   table.data-table { font-size: 0.8rem; }
