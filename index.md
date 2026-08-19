@@ -42,7 +42,7 @@ permalink: /
 <div class="paper-block">
   <h3><em>The Role of Stock Exchanges in Promoting the Banking Sector in Adopting Green Finance: A Global Analysis with Insights from Emerging Markets</em></h3>
   <p class="status">Published, December 2025 - ISSN 3051-5874</p>
-  <p><a href="https://www.kandyconference.org/wp-content/uploads/2026/03/ICSBE-2025-Proceeedings-Book-Volume-II.pdf#page=522" target="_blank" rel="noopener">[Link to publication]</a> &nbsp;|&nbsp; <a class="cite-link" href="{{ '/assets/cite/stock-exchanges-citation.txt' | relative_url }}" target="_blank">Cite this paper</a></p>
+  <p><a href="https://www.kandyconference.org/wp-content/uploads/2026/03/ICSBE-2025-Proceeedings-Book-Volume-II.pdf#page=522" target="_blank" rel="noopener">[Link to publication]</a> &nbsp;|&nbsp; <a href="{{ '/assets/papers/nawanjana-2025-stock-exchanges-green-finance.pdf' | relative_url }}" target="_blank">[PDF]</a> &nbsp;|&nbsp; <a class="cite-link" href="{{ '/assets/cite/stock-exchanges-citation.txt' | relative_url }}" target="_blank">Cite this paper</a></p>
 
   <p>
     This study investigates how stock exchanges can promote green finance adoption among banks
