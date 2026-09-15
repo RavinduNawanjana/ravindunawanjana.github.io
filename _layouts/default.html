@@ -47,31 +47,50 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.9.4/css/academicons.min.css">
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}">
 
+  <!-- Consolidated structured data. One @graph block instead of two
+       separate <script> tags - easier to validate, and adds a
+       ResearchGate sameAs link plus knowsAbout topics pulled directly
+       from the bio already on this page, so the entity is described
+       the same way everywhere it's referenced. -->
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "WebSite",
-    "name": "Ravindu Nawanjana",
-    "url": "{{ '/' | absolute_url }}"
-  }
-  </script>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "Person",
-    "name": "Ravindu Nawanjana",
-    "jobTitle": "Environmental Economist",
-    "url": "{{ '/' | absolute_url }}",
-    "image": "{{ '/assets/img/headshot.jpg' | absolute_url }}",
-    "email": "mailto:gmn0021@my.londonmet.ac.uk",
-    "affiliation": {
-      "@type": "CollegeOrUniversity",
-      "name": "London Metropolitan University"
-    },
-    "sameAs": [
-      "https://www.linkedin.com/in/ravindunawanjana/",
-      "https://github.com/RavinduNawanjana",
-      "https://scholar.google.com/citations?user=djgLs4EAAAAJ&hl=en"
+    "@graph": [
+      {
+        "@type": "WebSite",
+        "name": "Ravindu Nawanjana",
+        "url": "{{ '/' | absolute_url }}"
+      },
+      {
+        "@type": "Person",
+        "name": "Ravindu Nawanjana",
+        "jobTitle": "Environmental Economist",
+        "url": "{{ '/' | absolute_url }}",
+        "image": "{{ '/assets/img/headshot.jpg' | absolute_url }}",
+        "email": "mailto:gmn0021@my.londonmet.ac.uk",
+        "affiliation": {
+          "@type": "CollegeOrUniversity",
+          "name": "London Metropolitan University"
+        },
+        "alumniOf": {
+          "@type": "CollegeOrUniversity",
+          "name": "London Metropolitan University"
+        },
+        "knowsAbout": [
+          "Climate finance",
+          "Green finance",
+          "Sustainable finance",
+          "Stock exchanges",
+          "Emerging markets",
+          "Multilateral development banks"
+        ],
+        "sameAs": [
+          "https://www.linkedin.com/in/ravindunawanjana/",
+          "https://github.com/RavinduNawanjana",
+          "https://scholar.google.com/citations?user=djgLs4EAAAAJ&hl=en",
+          "https://www.researchgate.net/profile/Ravindu-Nawanjana"
+        ]
+      }
     ]
   }
   </script>
