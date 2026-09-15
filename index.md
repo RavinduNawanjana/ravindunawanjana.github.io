@@ -11,7 +11,7 @@ permalink: /
 # Ravindu Nawanjana
 
 <p>
-  I am an MSc student in International Banking and Finance at the Guildhall School of
+  I am an MSc graduate student in International Banking and Finance at the Guildhall School of
   Business and Law, London Metropolitan University. My research examines how financial
   institutions and market infrastructure, including stock exchanges, multilateral
   development banks, central banks, and private capital, can be structured and incentivised
@@ -32,6 +32,7 @@ permalink: /
   <li><a href="mailto:gmn0021@my.londonmet.ac.uk">gmn0021@my.londonmet.ac.uk</a></li>
   <li><a href="https://www.linkedin.com/in/ravindunawanjana/" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin"></i>LinkedIn</a></li>
   <li><a href="https://scholar.google.com/citations?user=djgLs4EAAAAJ&hl=en" target="_blank" rel="noopener"><i class="ai ai-google-scholar"></i>Google Scholar</a></li>
+  <li><a href="https://www.researchgate.net/profile/Ravindu-Nawanjana" target="_blank" rel="noopener">ResearchGate</a></li>
 </ul>
 
 ## Research
