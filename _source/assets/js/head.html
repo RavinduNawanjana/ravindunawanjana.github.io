@@ -1,0 +1,34 @@
+<meta name="author" content="Ravindu Nawanjana">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Ravindu Nawanjana",
+  "jobTitle": "Environmental Economist",
+  "url": "https://ravindunawanjana.github.io/",
+  "image": "https://ravindunawanjana.github.io/assets/img/headshot.jpg",
+  "email": "mailto:gmn0021@my.londonmet.ac.uk",
+  "identifier": "https://orcid.org/0009-0009-8594-0248",
+  "alumniOf": {"@type": "CollegeOrUniversity", "name": "London Metropolitan University"},
+  "knowsAbout": ["Environmental economics", "Climate finance", "Blended finance", "Multilateral climate funds", "Green finance", "Carbon markets", "Emerging markets", "Reproducible research"],
+  "sameAs": [
+    "https://www.linkedin.com/in/ravindunawanjana/",
+    "https://github.com/RavinduNawanjana",
+    "https://scholar.google.com/citations?user=djgLs4EAAAAJ&hl=en",
+    "https://orcid.org/0009-0009-8594-0248",
+    "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7346802"
+  ]
+}
+</script>
+<script>
+  // Keep "Research" highlighted in the menu on paper and statement pages.
+  document.addEventListener("DOMContentLoaded", function () {
+    if (location.pathname.indexOf("/research/") === -1) return;
+    document.querySelectorAll(".navbar .nav-link").forEach(function (a) {
+      if (/research\.html$/.test(a.getAttribute("href") || "")) {
+        a.classList.add("active");
+        a.setAttribute("aria-current", "page");
+      }
+    });
+  });
+</script>

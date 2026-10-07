@@ -1,0 +1,16 @@
+metric,construct_or_variable,reported_value,source,precision
+pearson_r,IC,0.409,"Supplementary Material S2, Table S2.1",0.001
+pearson_r,BFD,0.214,"Supplementary Material S2, Table S2.1",0.001
+pearson_r,PRA,-0.005,"Supplementary Material S2, Table S2.1",0.001
+pearson_r,TAFU,0.15,"Supplementary Material S2, Table S2.1",0.001
+standardized_beta,IC,0.39,"Supplementary Material S2, Table S2.1",0.001
+standardized_beta,BFD,0.121,"Supplementary Material S2, Table S2.1",0.001
+standardized_beta,PRA,0.024,"Supplementary Material S2, Table S2.1",0.001
+standardized_beta,TAFU,0.145,"Supplementary Material S2, Table S2.1",0.001
+model_r_squared,full,0.207,"Supplementary Material S2, Table S2.1 note",0.001
+model_adjusted_r_squared,full,0.174,"Supplementary Material S2, Table S2.1 note",0.001
+cronbach_alpha,IC,0.829,Original survey data independent audit; S2 reports range only,0.001
+cronbach_alpha,BFD,0.823,Original survey data independent audit; S2 reports range only,0.001
+cronbach_alpha,PRA,0.813,Original survey data independent audit; S2 reports range only,0.001
+cronbach_alpha,TAFU,0.846,Original survey data independent audit; S2 reports range only,0.001
+cronbach_alpha,CFA,0.863,Original survey data independent audit; S2 reports range only,0.001
