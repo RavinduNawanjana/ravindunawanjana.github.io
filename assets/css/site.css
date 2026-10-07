@@ -233,3 +233,10 @@ img.photo { border-radius: 8px; }
 
 /* Education points under the bio */
 .home-edu { margin-bottom: 0.4rem; }
+
+/* Justify the home page bio */
+.home main p {
+  text-align: justify;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+}
