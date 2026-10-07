@@ -1,0 +1,39 @@
+---
+title: "Climate finance as a dynamic system"
+subtitle: "Research statement"
+description: "Research statement by Ravindu Nawanjana for the Yale School of the Environment PhD programme in Environmental Economics, written with reference to the work of Professor Eli Fenichel."
+body-classes: statement-page
+---
+
+```{r}
+#| label: setup
+source(file.path(Sys.getenv("QUARTO_PROJECT_DIR", "."), "R", "site.R"))
+```
+
+[[Research](../../research.html) / [Statements](../../research.html#statements) / Climate finance as a dynamic system]{.breadcrumb}
+
+```{r}
+statement_header(reference = "Professor Eli Fenichel")
+```
+
+::: {.prose}
+My MSc dissertation at London Metropolitan University asked why climate finance reaches so few of the places that need it. It ended with a theoretical contribution I call the Institutional Reinforcement Cycle (IRC). I want to spend my doctoral years at Yale making the IRC rigorous, and the next step is the one your research addresses most directly, Professor Fenichel. The IRC produces system level failure from near zero values on single institutional variables. I want to treat the capital flows and the natural asset stocks that mechanism is meant to mobilize as formally interacting dynamic systems. I am currently working through capn, the natural capital valuation package you developed with Seong Do Yun and Josh Abbott, to build the numerical skills needed to model this problem as a dynamic system.
+
+The IRC treats a climate finance system as a product of four variables rather than a sum, those being institutional collaboration, policy alignment, blended finance deployment and transparency. A near zero value on one of them collapses the system regardless of how much capital sits in the funds. My evidence so far is a survey of 103 climate finance professionals and eight interviews with practitioners at UNDP, UNCDF, UN Sustainable Stock Exchanges, FAO, the African Development Bank, the Asian Development Bank, the World Bank GEF, a central bank and a private capital firm, which points to institutional collaboration as the binding constraint. I presented this at the 3rd International Conference on Biomimicry for Sustainability in August 2026, and the paper is now under revision at Climate and Development. The survey motivates the multiplicative form. It does not identify it. Closing that gap is the first methodological problem the dissertation has to solve.
+
+Your account of why municipalities are the frontline for climate adaptation describes, almost exactly, the kind of borrower I have been trying to finance. A Small Island Developing State is geographically defined, cannot diversify its cashflows across geography, aggregates small shocks that individuals absorb separately, has thin access to insurance, and falls back on grants and bailouts as its core risk management strategy, which then shows up in the price it pays to borrow. That is your description of a US county, scaled up and moved offshore. I had been treating the high cost of capital in these markets as a climate finance problem particular to developing economies. Reading your municipal work made me think it is a more general problem about undiversifiable, insurance-poor borrowers, and that the international version may have more to learn from the muni-bond market than from the climate funds.
+
+That reading also gives me a formal vocabulary for the multiplicative form. In your Panama Canal paper with Mani Rouhi Rad, Vic Adamowicz, Alicia Entem and Patrick Lloyd-Smith, you distinguish the capital space from the services space and show that stocks can be complements while the flows they produce are substitutes. Climate finance is usually modelled as though institutional quality and deployed capital are substitutes, so that enough money compensates for weak institutions. My survey says otherwise, and the partial identification approach in that paper is the most promising way I have found to test the claim formally.
+
+The collapse behaviour in the IRC has a precedent in your work as well. Your paper with Edward Tekwa, Simon Levin and Malin Pinsky shows that institutional path dependence on its own can produce alternative stable states, so that similar institutions end up trapped in very different but predictable outcomes. That is close to what my interviews described. Two countries with comparable fund access and technical capacity settle into different equilibria, and practitioners explain the difference by history rather than by any current policy difference. Your model outperformed competing explanations on a large dataset, and applying that approach to climate finance institutions is one of the things I most want to do at Yale.
+
+Your Science paper on bats and white-nose syndrome sets up a comparison I want to run. It shows that biodiversity loss raises county borrowing costs, and that targeted investment in existing municipal bonds, paired with restoration, could pay for conservation and return a profit. Your argument that conservation finance should use existing market infrastructure where it can gives my work a clear benchmark. My layered capital structure is a new instrument, with a concessional first loss position, a multilateral guarantee mezzanine and a household or bank deposit senior tranche. The test is whether it lowers borrowing costs by more than the same concessional money would inside the sovereign and subnational debt markets that already exist, and that is a comparison I would like to make with you.
+
+The third strand of the research is regenerative agriculture, and here your work reframed a conversation I had already had. I worked with Verra's VM0042 methodology for improved agricultural land management while structuring a paddy cultivation carbon programme at Kangara Holdings. The additionality test I ran with the Sri Lankan government was a difference in differences comparison of adopters and nonadopters of the proposed practice changes, checking whether each intervention exceeded the 5 percent quantitative change threshold and whether regional adoption stayed below the 20 percent common practice ceiling. The farmers I sat across from in Sri Lanka's dry zone were not thinking about additionality. They wanted to know what happens to their land rights if the project outlasts the company that signed the contract. Your paper with Kevin Berry and Brian Robinson on the ecological insurance trap helped me think about that question. Where financial insurance is missing, people build self-insurance out of the resource base itself, so an intervention that changes the resource base can remove the insurance while appearing to add value. A carbon contract that reorganizes land management and then expires is doing something structurally similar.
+
+To keep the work tied to data, I plan to run a small pilot with a commercial bank in a Small Island Developing State during the doctorate. Dr. Pradeep Kurukulasuriya at UNCDF, Jason Spensley at the World Bank GEF and Dr. Anthony Miller at UN Sustainable Stock Exchanges have all seen early versions of the model, and Dr. Kurukulasuriya pushed me to treat how capital is raised and where it ends up going as linked problems. The pilot would produce real pricing, take-up and default data to discipline the model's parameters. The natural capital and dynamic systems strands of this programme are where your supervision would matter most, Professor Fenichel.
+:::
+
+```{r}
+statement_pager("research/statements/dynamic-systems.qmd")
+```

@@ -1,0 +1,85 @@
+---
+title: "The Role of Stock Exchanges in Promoting the Banking Sector in Adopting Green Finance"
+subtitle: "A Global Analysis with Insights from Emerging Markets"
+description: "How stock exchanges can promote green finance adoption among banks, with survey evidence from emerging markets and SMART implementation frameworks for regulators."
+body-classes: paper-page
+crossref:
+  title-delim: "."
+toc: true
+toc-depth: 2
+author:
+  - name: Ravindu Nawanjana
+    orcid: 0009-0009-8594-0248
+    affiliation: Guildhall School of Business and Law, London Metropolitan University
+citation:
+  type: paper-conference
+  title: "The Role of Stock Exchanges in Promoting the Banking Sector in Adopting Green Finance: A Global Analysis with Insights from Emerging Markets"
+  container-title: "Proceedings of the 16th International Conference on Sustainable Built Environment (ICSBE 2025)"
+  publisher: "Graduate Associate Professional (Pvt) Ltd"
+  volume: 2
+  page: 1622-1643
+  issued: 2025-12
+  ISSN: 3051-5874
+  url: https://papers.ssrn.com/sol3/papers.cfm?abstract_id=7318958
+  pdf-url: https://ravindunawanjana.github.io/assets/nawanjana-2025-stock-exchanges-green-finance.pdf
+google-scholar: true
+appendix-cite-as: display
+---
+
+```{r}
+#| label: setup
+source(file.path(Sys.getenv("QUARTO_PROJECT_DIR", "."), "R", "site.R"))
+```
+
+[[Research](../research.html) / Stock exchanges and green finance]{.breadcrumb}
+
+```{r}
+paper_links("sx")
+```
+
+## Abstract
+
+This study investigates how stock exchanges can promote green finance adoption among banks globally. It combines a synthesis of 64 sources with primary survey data from financial practitioners across emerging markets including India, Malaysia, Ghana and Sri Lanka, and identifies four interdependent drivers of adoption, namely market regulations, market mechanisms, awareness and incentives. IMF/IOSCO data show that only 49% of regulators in low-income economies maintain supportive market regulations, compared with 85% in high-income OECD nations. The findings indicate that stock exchanges must move from voluntary guidance to binding frameworks that mandate ESG disclosure and green bond standards for listed banks, supported by targeted tax incentives, formal peer exchange partnerships and standardised carbon market disclosure.
+
+```{r}
+#| label: fig-regulation-gap
+#| fig-cap: "Share of securities regulators maintaining market regulations that support green finance, by income group (IMF/IOSCO data as reported in the paper). Drawn in R."
+#| fig-alt: "Horizontal bar chart: 49 percent of regulators in low-income economies versus 85 percent in high-income OECD economies."
+#| fig-width: 7
+#| fig-height: 1.9
+gap <- data.frame(group = factor(c("Low-income economies", "High-income OECD"),
+                                 levels = c("Low-income economies", "High-income OECD")),
+                  share = c(49, 85))
+ggplot(gap, aes(share, group)) +
+  geom_col(width = 0.55, fill = c(site_colours[["amber"]], site_colours[["leaf"]])) +
+  geom_text(aes(label = paste0(share, "%")), hjust = -0.15, family = "serif", size = 4) +
+  scale_x_continuous(limits = c(0, 100), breaks = c(0, 25, 50, 75, 100), labels = function(x) paste0(x, "%")) +
+  labs(x = NULL, y = NULL) +
+  theme_site()
+```
+
+## Data and code
+
+The survey behind the paper has 103 respondents and 30 five-point Likert items covering market regulations, market mechanisms, awareness, incentives and green finance adoption. The item-level data, the SPSS data file and the original SPSS output are public on [Figshare](https://doi.org/10.6084/m9.figshare.31861627). A [companion repository](https://github.com/RavinduNawanjana/stock-exchange-intermediation-green-finance) re-runs the analysis in R and Quarto, with an independent Python/Jupyter audit of the same files and a direct reconciliation against the SPSS data.
+
+## Policy frameworks
+
+The paper's main policy contribution is a set of SMART (Specific, Measurable, Achievable, Relevant, Time-bound) implementation frameworks for closing the gap in green finance adoption between banks listed on high-income, well-regulated exchanges and those in low- and middle-income markets. The four tables below are generated in R from a data file.
+
+```{r}
+#| label: smart-tables
+#| output: asis
+smart <- read_site("smart")
+for (s in smart) {
+  rows <- lapply(names(s$rows), function(k) tags$tr(tags$td(k), tags$td(s$rows[[k]])))
+  cat(as.character(div(class = "table-wrap", tags$table(
+    class = "data-table",
+    tags$caption(sprintf("Table %d. SMART framework for the relationship between %s and green finance adoption. Source: Author.", s$table, s$driver)),
+    tags$thead(tags$tr(tags$th("Criteria"), tags$th("Implementation plan"))),
+    tags$tbody(rows)))), "\n\n")
+}
+```
+
+More citation formats, including MLA, Vancouver and Harvard, are in the [citation file](../assets/stock-exchanges-citation.txt){target="_blank"}.
+
+[&larr; Back to research](../research.qmd){.back-link}

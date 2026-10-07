@@ -1,0 +1,37 @@
+---
+title: "Fund design, pilots and political economy"
+subtitle: "Research statement"
+description: "Research statement by Ravindu Nawanjana for the Yale School of the Environment PhD programme in Environmental Economics, written with reference to the work of Professor Matthew Kotchen."
+body-classes: statement-page
+---
+
+```{r}
+#| label: setup
+source(file.path(Sys.getenv("QUARTO_PROJECT_DIR", "."), "R", "site.R"))
+```
+
+[[Research](../../research.html) / [Statements](../../research.html#statements) / Fund design, pilots and political economy]{.breadcrumb}
+
+```{r}
+statement_header(reference = "Professor Matthew Kotchen")
+```
+
+::: {.prose}
+My MSc dissertation at London Metropolitan University asked why climate finance reaches so few of the places that need it. It ended with a theoretical contribution I call the Institutional Reinforcement Cycle (IRC). I want to spend my doctoral years at Yale turning the IRC from a framework I believe in into something a skeptical economist would accept. That means writing it down formally, estimating it, and finding out where it fails. Your work on how multilateral funds choose and finance projects, Professor Kotchen, is the closest body of research to that problem that I have found.
+
+The IRC treats a climate finance system as a product of its components rather than a sum. Institutional collaboration, policy alignment, blended finance deployment and transparency compound, so a value near zero on one of them can stall the whole system however much capital sits in the funds. My evidence so far is a survey of 103 climate finance professionals and eight interviews with practitioners at UNDP, UNCDF, UN Sustainable Stock Exchanges, FAO, the African Development Bank, the Asian Development Bank, the World Bank GEF, a central bank and a private capital firm. It points to institutional collaboration, rather than the volume of blended finance, as the binding constraint. I presented this at the 3rd International Conference on Biomimicry for Sustainability in August 2026, and the paper is now under revision at Climate and Development. A survey of this size motivates the multiplicative form but does not identify it, and getting to an estimable, identified specification is the first thing I would like to work on with you.
+
+The finding I most want to test against your work is that the volume of blended finance is not the binding constraint. Your paper with Andrew Vogt reaches a related conclusion from a different direction. Using project data from the Global Environment Facility and the Green Climate Fund, you show that adding cofinancing objectives to a fund that already seeks to maximize its environmental impact is redundant at best and more likely counterproductive, and that cofinancing targets do little for realized environmental benefits. My survey reached a similar place from the practitioner side. The question your paper leaves open, and the one my framework is trying to answer, is what a fund should target instead when institutional collaboration is the scarce input. Your earlier work with Neeraj Negi on 3,269 GEF projects is the evidence base I would most like to learn to work with in trying to answer it.
+
+Your work also gives my pilot a second role. I plan to run a small pilot with a commercial bank in a Small Island Developing State during the doctorate, designed to produce real pricing, take-up and default data to discipline the model. Your paper with Christopher Costello separates pilot projects, whose main purpose is information about whether a project is worth doing, from full projects at scale, and finds that pilots are often the better target for public subsidy. That changes what the concessional first loss tranche in my structure is for. If the first round of concessional capital is mainly buying information, it may be better sized and priced as an option on a later full project than as a standing subsidy, and I would like to work out what that implies for the rest of the structure. Dr. Pradeep Kurukulasuriya at UNCDF, Jason Spensley at the World Bank GEF and Dr. Anthony Miller at UN Sustainable Stock Exchanges have all seen early versions of the model. Mr. Spensley thought it technically feasible but politically uncertain, which is itself a reason to learn cheaply before committing at scale.
+
+I also want to formalize the selection question. My structure pairs central bank regulated climate deposits with multilateral guarantees, and a guarantee facility may draw in the projects that would have been financed anyway while leaving the risky ones unfunded. In that case the concessional capital buys very little additional investment, which is the additionality problem moved up from the project to the fund. Your time as Deputy Assistant Secretary for Environment and Energy at the Treasury means you have seen from inside the institutions what my survey respondents described from outside them. The frustration that recurred across my data was that fund governance tracks donor convenience more closely than recipient need. That is a political economy problem before it is a finance problem, and I would like to model it as one.
+
+The third strand of the research is regenerative agriculture. I worked with Verra's VM0042 methodology for improved agricultural land management while structuring a carbon programme at Kangara Holdings. The additionality test I ran with the Sri Lankan government was a difference in differences comparison of adopters and nonadopters of the proposed practice changes, checking whether each intervention exceeded the 5 percent quantitative change threshold and whether regional adoption stayed below the 20 percent common practice ceiling. The farmers I sat across from in the dry zone were not thinking about additionality. They wanted to know what happens to their land rights if the project outlasts the company that signed the contract. That is an enforcement problem inside a voluntary market, and your work with Kathleen Segerson on group performance and group rights in resource management is where I would start to model it.
+
+This work sits inside a wider programme with three strands, the capital structure itself, its application to energy and its application to regenerative agriculture. I have attended three UNFCCC COPs and two UNCCD COPs, and in those rooms the gap between capital pledged and capital deployed was the most consistent problem I saw. The fund design and political economy strands of this programme are where your work matters most to mine, Professor Kotchen, and I want to find out early where my framework holds and where it breaks.
+:::
+
+```{r}
+statement_pager("research/statements/fund-design.qmd")
+```

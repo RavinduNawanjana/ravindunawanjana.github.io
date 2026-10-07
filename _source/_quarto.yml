@@ -1,0 +1,92 @@
+project:
+  type: website
+  output-dir: _site
+  render:
+    - "*.qmd"
+    - "research/*.qmd"
+    - "research/statements/*.qmd"
+  resources:
+    - "assets/**"
+    - "favicon.ico"
+    - "robots.txt"
+    - "googlef15dc02c38627cb4.html"
+    - "404.html"
+
+execute:
+  # Every build re-runs the R (and Python) code, so edits to data/site/*.yml
+  # and the survey data always reach the published pages.
+  freeze: false
+  echo: false
+  warning: false
+  message: false
+
+website:
+  title: "Ravindu Nawanjana - Environmental Economist"
+  description: "Ravindu Nawanjana works on climate finance in developing economies: the cost of capital, blended finance, multilateral climate funds and stock exchanges, with a focus on the G77 and China and Small Island Developing States."
+  site-url: "https://ravindunawanjana.github.io"
+  favicon: assets/img/favicon-32.png
+  image: assets/img/headshot.jpg
+  open-graph: true
+  twitter-card: true
+  page-navigation: false
+  search: false
+  back-to-top-navigation: false
+  bread-crumbs: false
+  navbar:
+    title: "Ravindu Nawanjana - Environmental Economist"
+    collapse-below: md
+    left:
+      - text: Home
+        href: index.qmd
+      - text: Research
+        href: research.qmd
+      - text: Code
+        href: code.qmd
+      - text: Media
+        href: media.qmd
+      - text: CV
+        href: assets/cv/Ravindu_Nawanjana_CV.pdf
+        target: _blank
+      - text: GitHub
+        href: https://github.com/RavinduNawanjana
+        target: _blank
+  page-footer:
+    left: |
+      [gmn0021@my.londonmet.ac.uk](mailto:gmn0021@my.londonmet.ac.uk) ·
+      [ORCID](https://orcid.org/0009-0009-8594-0248) ·
+      [Google Scholar](https://scholar.google.com/citations?user=djgLs4EAAAAJ&hl=en) ·
+      [LinkedIn](https://www.linkedin.com/in/ravindunawanjana/)
+    right: |
+      Built with R and Quarto. Views on this site are my own.
+
+crossref:
+  title-delim: "."
+
+language:
+  appendix-attribution-cite-as: "Please cite this work as"
+  appendix-attribution-bibtex: "BibTeX citation"
+
+format:
+  html:
+    theme:
+      light: [cosmo, styles/light.scss]
+      dark: [cosmo, styles/dark.scss]
+    css: assets/css/site.css
+    include-in-header:
+      - file: assets/js/head.html
+    toc: false
+    toc-location: right
+    toc-title: On this page
+    smooth-scroll: true
+    code-overflow: wrap
+    code-tools: false
+    anchor-sections: false
+    link-external-icon: false
+    html-math-method: katex
+    grid:
+      body-width: 860px
+      margin-width: 230px
+      gutter-width: 2rem
+    fig-align: center
+    fig-dpi: 144
+    lang: en-GB
