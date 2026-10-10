@@ -1,0 +1,35 @@
+---
+title: "Financing resilient water systems"
+subtitle: "Research statement"
+description: "Research statement by Ravindu Nawanjana for the Yale School of the Environment PhD programme in Environmental Economics, written with reference to the work of Professor David Keiser."
+body-classes: statement-page
+---
+
+```{r}
+#| label: setup
+source(file.path(Sys.getenv("QUARTO_PROJECT_DIR", "."), "R", "site.R"))
+```
+
+[[Research](../../research.html) / [Statements](../../research.html#statements) / Financing resilient water systems]{.breadcrumb}
+
+```{r}
+statement_header(reference = "Professor David Keiser")
+```
+
+::: {.prose}
+My MSc dissertation at London Metropolitan University asked why climate finance reaches so few of the places that need it. It ended with a theoretical contribution I call the Institutional Reinforcement Cycle (IRC), which treats institutional collaboration, policy alignment, blended finance deployment and transparency as complements rather than independent inputs. I now want to test that framework against a sector where capital is long lived, public benefits are large and institutional weakness is unusually costly. Your work on the costs and benefits of water quality policy, Professor Keiser, is the closest empirical model I have found for that test.
+
+The second chapter of my proposed dissertation applies a layered capital structure to resilient water systems in Small Island Developing States and Least Developed Countries. Desalination, storage, treatment and piped networks require large up-front investments and generate returns over decades, so the price users pay for water is partly the price of capital. I would begin with a narrow question: how much of a water utility's borrowing cost in one Small Island Developing State comes from country and institutional risk rather than project risk, and how much of that premium a credible multilateral guarantee can remove? The structure would place concessional grants in a first-loss tranche, multilateral guarantees above them and household or bank deposits in a senior tranche. Its value should be judged by the financing cost it actually removes, not by the amount of private capital it claims to mobilise.
+
+Your research on Clean Water Act grants gives me the welfare standard this chapter needs. A financing mechanism is useful only if the benefits of the additional water investment exceed the public resources used to produce it. I would therefore estimate the change in borrowing terms and investment caused by the guarantee, translate that change into service and water-quality outcomes, and compare those benefits with the expected cost of the grant and guarantee. This would turn a claim about cheaper capital into a falsifiable cost-benefit test.
+
+The incidence of those benefits matters just as much as their total. Your work on who receives federal drinking-water earmarks raises a selection problem for my structure: a guarantee facility may favour utilities that already have the administrative capacity to prepare bankable projects, while bypassing smaller or poorer systems with the greatest need. Your research on water-system consolidation also shows why institutional form cannot be treated as a background condition. Consolidation may spread fixed costs and technical capacity across a larger customer base, but it can also change accountability, local control and the distribution of gains. I would model project selection and institutional structure jointly, then test who receives lower financing costs and who ultimately receives safer or more reliable water.
+
+The empirical work would start with utility accounts, loan terms, tariff schedules, service interruptions and water-quality measures in one Small Island Developing State, followed by a comparable case in a Least Developed Country if data permit. A small feasibility pilot with a commercial bank would generate real pricing, take-up and repayment evidence under a guarantee. The pilot would be designed to learn rather than to demonstrate success: its purpose is to identify which risks lenders actually price, which risks a guarantee can credibly absorb and where the structure fails.
+
+My preparation is applied but quantitative. My MSc used reliability analysis, correlation, multiple regression and practitioner interviews; I have also run a difference-in-differences additionality test with Sri Lanka's Ministry of Environment and Ministry of Agriculture. I work in R, Python and Stata, and I want Yale's theory and econometrics sequence to give this project the causal and structural discipline it still needs. The water chapter is where your work matters most to mine, Professor Keiser: it would force my financing proposal to answer the questions that matter—whether it changes investment, whether the benefits exceed the subsidy and whether the gains reach the communities that need them.
+:::
+
+```{r}
+statement_pager("research/statements/financing-resilient-water-systems.qmd")
+```
